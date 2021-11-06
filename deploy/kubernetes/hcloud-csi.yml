@@ -226,7 +226,7 @@ spec:
             nodeSelectorTerms:
               - matchExpressions:
                   - key: "instance.hetzner.cloud/is-root-server"
-                    operator: Not
+                    operator: NotIn
                     values:
                       - "true"
       serviceAccount: hcloud-csi
